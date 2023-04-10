@@ -5,7 +5,7 @@ import { BsFillBagXFill } from 'react-icons/bs';
 import { useStateContext } from '../context/StateContext';
 
 
-const Cancelled = () => {
+const Cancel = () => {
     const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
     
     useEffect(() => {
@@ -18,8 +18,8 @@ const Cancelled = () => {
   
 
     return (
-        <div className="cancelled-wrapper">
-          <div className="cancelled">
+        <div className="cancel-wrapper">
+          <div className="cancel">
             <p className="icon">
               <BsFillBagXFill />
             </p>
@@ -41,4 +41,4 @@ const Cancelled = () => {
       )
     }
 
-export default Cancelled
+export default Cancel
