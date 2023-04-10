@@ -22,7 +22,7 @@ const Success = () => {
           <BsFillBagXFill />
         </p>
         <h2>Sorry,Your order was cancelled!</h2>
-        <p className="email-msg">Check your email inbox for the receipt.</p>
+        
         <p className="description">
           If you have any questions, please email
           <a className="email" href="mailto:heymaamastore@gmail.com">
