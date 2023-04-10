@@ -3,17 +3,19 @@ import Link from 'next/link';
 import { BsFillBagXFill } from 'react-icons/bs';
 
 import { useStateContext } from '../context/StateContext';
-import { runFireworks } from '../lib/utils';
 
-const Success = () => {
-  const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
+
+const Cancelled = () => {
+    const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
+    
+    useEffect(() => {
+      localStorage.clear();
+      setCartItems([]);
+      setTotalPrice(0);
+      setTotalQuantities(0);
+     
+    }, []);
   
-  useEffect(() => {
-    localStorage.clear();
-    setCartItems([]);
-    setTotalPrice(0);
-    setTotalQuantities(0);
-  }, []);
 
   return (
     <div className="cancelled-wrapper">
@@ -38,4 +40,4 @@ const Success = () => {
   )
 }
 
-export default cancelled
+export default Cancelled
