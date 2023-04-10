@@ -750,10 +750,10 @@ margin-top: 160px;
   margin-top: 100px;
   padding: 20px;
 }
-.success{
+.success, .cancel {
   height: 350px;
 }
-.success h2{
+.success, .cancel h2{
   font-size: 17px;
 }
 .btn-container{
