@@ -565,12 +565,29 @@ padding: 6px;
   font-weight: 500;
   color: #f02d34;
 }
-.success-wrapper, .cancel-wrapper{
+.success-wrapper{
   background-color: white;
   min-height: 60vh;
 
 }
-.success, .cancel{
+.cancel-wrapper{
+  background-color: white;
+  min-height: 60vh;
+
+}
+.success {
+  width: 1000px;
+margin: auto;
+margin-top: 160px;
+  background-color: #dcdcdc;
+  padding: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cancel{
   width: 1000px;
 margin: auto;
 margin-top: 160px;
@@ -591,7 +608,14 @@ margin-top: 160px;
   color: rgb(255, 4, 0);
   font-size: 40px;
 }
-.success,.cancel h2{
+.success h2{
+  text-transform: capitalize;
+  margin-top: 15px 0px;
+  font-weight: 900;
+  font-size: 40px;
+  color:#324d67;
+}
+.scancel h2{
   text-transform: capitalize;
   margin-top: 15px 0px;
   font-weight: 900;
@@ -614,7 +638,11 @@ margin-top: 160px;
   margin: 10px;
   margin-top: 30px;
 }
-.success,.cancel .description .email{
+.success .description .email{
+  margin-left: 5px;
+  color: #f02d34;
+}
+.cancel .description .email{
   margin-left: 5px;
   color: #f02d34;
 }
